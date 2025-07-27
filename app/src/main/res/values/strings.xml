@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Host App</string>
+    <string name="open_flutter_module">Open Flutter Module</string>
+    <string name="flutter_module_description">Launch the Flutter counter app from this native Android application</string>
+</resources>

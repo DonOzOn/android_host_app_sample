@@ -1,0 +1,115 @@
+# === OS Specific ===
+
+# macOS
+.DS_Store
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# === IDEs ===
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+
+# === Build / Gradle ===
+
+.gradle/
+build/
+**/build/
+local.properties
+*.log
+*.tmp
+
+# Gradle Wrapper
+# .gradle/
+# gradle-app.setting
+# gradle-wrapper.jar
+# gradle-wrapper.properties
+
+# === Signing / Keystore Files (sensitive) ===
+
+*.jks
+*.keystore
+*.pem
+*.key
+*.p12
+*.p8
+*.der
+
+# === Dependency / Cache ===
+
+.cxx/
+.externalNativeBuild/
+captures/
+output.json
+*.apk
+*.ap_
+*.dex
+*.class
+*.so
+*.jar
+*.aar
+
+# === Kotlin Specific ===
+
+*.kotlin_module
+
+# === Misc ===
+
+*.swp
+*.swo
+*.orig
+*.bak
+*.tmp
+
+# === Crash Logs / Mapping / Proguard ===
+
+mapping.txt
+app.*.map
+app.*.map.json
+app.*.symbols
+
+# === Optional: Firebase / Crashlytics / Fastlane ===
+
+# Firebase
+google-services.json
+
+# Crashlytics
+crashlytics-build.properties
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# === Optional: CI/CD Tools ===
+
+# Bitrise
+bitrise.yml
+.bitrise.secrets.yml
+
+# Git
+*.patch
+*.rej
+
+# === Optional Cleanup: Legacy or Unused ===
+
+# You had some Xcode/iOS/Flutter stuff. Removed for native Android:
+# - .ios/
+# - .dart_tool/
+# - .flutter-plugins*
+# - .pub/
+# - .xcuserdata
+# - .pbxuser, etc.
+
