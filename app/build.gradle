@@ -23,6 +23,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.debug
         }
+
+        profile {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
     }
     
     compileOptions {
@@ -35,15 +47,28 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url 'libs/repo'
+        // This is relative to the location of the build.gradle file
+        // if using a relative path.
+    }
+    maven {
+        url 'https://storage.googleapis.com/download.flutter.io'
+    }
+}
+
 dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    
+
     // Flutter module dependency
-    implementation project(':flutter')
-    
+//    implementation project(':flutter')
+    debugImplementation 'com.example.flutter_module_example:flutter_debug:1.0'
+    profileImplementation 'com.example.flutter_module_example:flutter_profile:1.0'
+    releaseImplementation 'com.example.flutter_module_example:flutter_release:1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

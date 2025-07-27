@@ -1,9 +1,10 @@
 include ':app'
+include ':flutter'
 rootProject.name = "Android Host App"
 
-// Include Flutter module
-setBinding(new Binding([gradle: this]))
-evaluate(new File(
-    settingsDir.parentFile,
-    'flutter_module_example/.android/include_flutter.groovy'
-))
+// Temporarily restore Flutter module for demonstration
+//setBinding(new Binding([gradle: this]))
+//evaluate(new File(
+//    settingsDir.parentFile,
+//    'flutter_module_example/.android/include_flutter.groovy'
+//))
